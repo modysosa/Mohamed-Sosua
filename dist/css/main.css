@@ -1,4 +1,4 @@
-*{-webkit-box-sizing:border-box;box-sizing:border-box}.page{min-height:100vh}.page .content-area{width:calc(100% - 250px);min-height:100%;-webkit-transition:.4s;transition:.4s;float:right;will-change:width}.page .content-area.no-sidebar{width:100%}.sidebar{width:250px;position:fixed;top:0;left:0;height:100%;background-color:#eee;padding:15px;-webkit-transition:.4s;transition:.4s}.sidebar.no-sidebar{left:-250px}.header .toggle-sidebar{cursor:pointer}
+*{-webkit-box-sizing:border-box;box-sizing:border-box}.page{min-height:100vh}.page .content-area{width:calc(100% - 250px);min-height:100vh;-webkit-transition:.4s;transition:.4s;float:right;will-change:width;background-color:#f2f1f6}.page .content-area.no-sidebar{width:100%}.sidebar{width:250px;position:fixed;top:0;left:0;height:100%;background-color:#292c33;color:#fff;padding:15px;-webkit-transition:.4s;transition:.4s}.sidebar.no-sidebar{left:-250px}.header{background-color:#fff;padding:15px}.header .toggle-sidebar{cursor:pointer}
 /*!
  * Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
