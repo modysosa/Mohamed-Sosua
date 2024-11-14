@@ -1,0 +1,33 @@
+what we need to start
+nodjs
+vscode extentiopns
+auto rename tag  //jun han
+css peek  //pranay prakash
+editorConfig for vscode
+icon fonts   //idleberg
+indent-rainbow  //oderwat
+live server //ritwich dey
+path intellisense //christian kohler
+prettier - code formatter //esben petersen
+bracket pair colorizer //coenraads
+material icon theme //philipp kief
+polacode  //p & p
+///////////very important///////////////
+https://www.npmjs.com/package/gulp-sass
+////////////////////////////////////////
+
+
+cmder command
+
+npm i gulp@3.9.1 -g    //install gulp to compress files
+npm init		//to initialze the project to create json file
+npm i gulp@3.9.1 --save-dev
+gulp -v
+
+touch gulpfile.js
+ls
+
+npm i gulp-concat gulp-sass gulp-autoprefixer gulp-pug gulp-livereload gulp-notify gulp-sourcemaps gulp-minify --save-dev
+
+
+

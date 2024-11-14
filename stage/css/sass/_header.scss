@@ -1,0 +1,16 @@
+body{
+    color: blueviolet;
+    background-color: antiquewhite;
+}
+.header{
+    height: 50px;
+    display: flex;
+    color: red;
+}
+.content {
+    height : 800px;
+    opacity: .5;
+    transform: rotate(60deg);
+    display: flex;
+    transition: all .3 ease-in-out;
+}

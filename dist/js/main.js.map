@@ -1,0 +1,1 @@
+{"version":3,"sources":["one.js","two.js"],"names":["document","getElementById","innerHTML"],"mappings":"AAAAA,SAAAC,eAAA,KAAA,EAAAC,UAAA,6BCAAF,SAAAC,eAAA,KAAA,EAAAC,UAAA","file":"main.js","sourcesContent":["document.getElementById(\"one\").innerHTML =\"Text One-- From Javascript\";","document.getElementById(\"two\").innerHTML =\"Text two- From Javascript\";"]}

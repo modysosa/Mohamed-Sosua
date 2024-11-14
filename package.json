@@ -1,0 +1,29 @@
+{
+  "name": "scorpion",
+  "version": "1.0.0",
+  "description": "my first project",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sosa",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-notify": "^5.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-zip": "^6.0.0",
+    "sass": "^1.80.7"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "gulp-sourcemaps": "^3.0.0",
+    "static-server": "^2.2.1"
+  }
+}
