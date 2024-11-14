@@ -1,9 +1,3 @@
-@use "sass/variables/colors.scss";
-@use "sass/header";
-@use "sass/footer";
+@use "sass/layout/global";
+@use "sass/layout/sidebar";
 
-
-body{
-    color: blueviolet;
-    background-color: wheat;
-}
