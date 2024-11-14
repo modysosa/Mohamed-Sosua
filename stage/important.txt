@@ -31,3 +31,8 @@ npm i gulp-concat gulp-sass gulp-autoprefixer gulp-pug gulp-livereload gulp-noti
 
 
 
+//////////////GitHub////////////////
+git config --global user.name
+//create the reposetry after that create ssh key from your terminal
+ssh-keygen -t rsa -b 4096 -C "modysosa@hotmail.com"
+//creat user and password
