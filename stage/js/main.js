@@ -9,12 +9,21 @@ $(function(){
       $(this).find(".fa-angle-right").toggleClass("down");
       $(this).next(".child-links").slideToggle();
   });
-
+  // drop down menu
   $(document).ready(function() {
       $('#notifications').on('click', function() {
+          let expanded = $(this).attr('aria-expanded') === 'true';
+          $(this).attr('aria-expanded',!expanded);
           $(this).next('.dropdown-menu').toggleClass('show');
       });
   });
+  $(document).ready(function() {
+    $('#usermenu').on('click', function() {
+        let expanded = $(this).attr('aria-expanded') === 'true';
+        $(this).attr('aria-expanded',!expanded);
+        $(this).next('.dropdown-menu').toggleClass('show');
+    });
+});
   // open / close fulscreen
   $(".toggle-fullscreen").on("click", function(){
     $(this).toggleClass("full-screen");

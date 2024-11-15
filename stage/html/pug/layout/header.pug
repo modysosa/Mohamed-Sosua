@@ -26,3 +26,33 @@
 
             .noti-foot.text-center: a(href="#") View All Notifications
     i.fa-solid.fa-up-right-and-down-left-from-center.fa-lg.toggle-fullscreen.header-icon
+    .dropdown.usermenu-container 
+        .username#usermenu(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+            img.avatar.rounded-circle(src="imgs/avatar.jpg" alt="user Avatar")
+            span.user Mohamed Sousa
+        .dropdown-menu.dropdown-menu-right(aria-labelledby='usermenu')
+            .user-info
+                h3 Mohamed Sousa 
+                p Page Owner
+            hr
+            ul.activities-list
+                li Creating FrontEnd App 
+                li CCNA 
+                li Python Apps
+                li Creating FrontEnd App 
+                li CCNA 
+                li Python Apps
+            hr
+            .row.usermenu-links
+                .col
+                    .link-box
+                        i.fa.fa-gear.fa-lg-fw
+                        span Settings
+                .col
+                    .link-box
+                        i.fa.fa-user.fa-lg-fw
+                        span Profile
+                .col
+                    .link-box
+                        i.fa.fa-power-off.fa-lg-fw
+                        span Logout                    
