@@ -1,2 +1,23 @@
 .header 
     i.fa.fa-exchange.fa-lg.toggle-sidebar
+    .dropdown.notification-container 
+        i.fa.fa-bell.fa-lg.toggle-notifications#notifications(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+        .dropdown-menu(aria-labelledby='notifications')
+            .noti-head Notifications
+                span 13
+            .noti-content 
+                ul.list-unstyled
+                    li
+                        i.fa.fa-envelope-o.fa-lg
+                        | We can use variable ti notify
+                    li
+                        i.fa.fa-money.fa-lg
+                        | We can use variable ti notify
+                    li
+                        i.fa.fa-thumbs-o-up.fa-lg
+                        | We can use variable ti notify
+                    li
+                        i.fa.fa-envelope-o.fa-lg
+                        | We can use variable ti notify
+
+            .noti-foot.text-center: a(href="#") View All Notifications

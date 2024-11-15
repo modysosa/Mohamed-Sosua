@@ -1,7 +1,72 @@
 .header {
     background-color: #fff;
-    padding: 15px;
+    padding: 20px;
     .toggle-sidebar {
         cursor: pointer;
+    }
+    .notification-container{
+        display: inline-block;
+        margin-left: 20px;
+        .toggle-notifications{
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 50%;
+            color: #555;
+            cursor: pointer;
+        }
+        .dropdown-menu{
+            min-width: 600px;
+            border: none;
+            padding: 0;
+            top: 35px !important;
+            &:before{
+                content: "";
+                position: absolute;
+                top: -22px;
+                left: 8px;
+                border: solid;
+                border-width: 11px;
+                border-color: transparent transparent #333 transparent;
+            }
+            .noti-head{
+                background-color: #333;
+                padding: 15px;
+                color: #fff;
+                span{
+                    float: right;
+                }
+            }
+            .noti-content{
+                padding: 20px;
+                ul{
+                    margin: 0;
+                    li{
+                        padding: 10px;
+                        i{
+                            background-color: #eee;
+                            padding: 10px;
+                            border-radius: 50%;
+                            width: 45px;
+                            height: 45px;
+                            text-align: center;
+                            margin-right: 10px;
+                            position: relative;
+                            top: -2;
+                        }
+                    }
+                }
+            }
+            .noti-foot{
+                a{
+                    display: block;
+                    padding: 10px;
+                    border-top: 1px solid #eee;
+                    text-decoration: none;
+                    // &:hover{
+                    //     text-decoration: none;
+                    // }
+                }
+            }
+        }
     }
 }
