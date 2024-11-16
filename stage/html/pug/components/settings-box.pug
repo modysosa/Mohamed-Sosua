@@ -1,0 +1,14 @@
+.settings-box.hide-settings
+    .toggle-settings 
+        i.fa.fa-gear.fa-lg
+    .settings-content.text-center
+        .option-box.color-otpions
+            h4.option-title Color Options
+            - var themes = ["green-theme", "blue-theme", "red-theme", "night-theme","purple-theme"]
+            ul.list-unstyled
+                each theme in themes
+                    li(data-theme=theme)
+        .option-box.option-title
+            h4 Font Option
+        .option-box.option-title 
+            h4 Sidbar Options

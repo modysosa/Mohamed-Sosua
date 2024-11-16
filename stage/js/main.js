@@ -33,6 +33,24 @@ $(function(){
         closeFullscreen();
     }
   });
+  // Toggle Settings
+  $(".toggle-settings").on("click", function(){
+    $(this).find("i").toggleClass("fa-spin")
+    $(this).parent().toggleClass("hide-settings")
+  });
+  //Switch Colors
+  var themesClasses = [];
+  $(".color-otpions li").each(function(){
+    themesClasses.push($(this).data("theme"));
+  });
+  $(".color-otpions li").on("click",function(){
+    $(this).addClass("active").siblings().removeClass("active")
+    $("body")
+    .removeClass(themesClasses.join(" "))
+    .addClass($(this).data("theme"));
+  });
+
+
 });
 /* Get the element you want displayed in fullscreen */ 
 var elem = document.documentElement;

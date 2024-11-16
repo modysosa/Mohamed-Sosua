@@ -1,0 +1,28 @@
+@use "sass:map";
+
+$themes: (
+    green-theme: (bo2loz: #27ae60),
+    blue-theme: (bo2loz: #2980b9),
+    red-theme: (bo2loz: #c0392b),
+    night-theme: (bo2loz: #2c3e50),
+    purple-theme: (bo2loz: #8e44ad)
+);
+
+@each $theme, $map in $themes {
+    .#{$theme} {
+        .page .page-head .page-title {
+            color: map.get($map, bo2loz);
+        }
+    }
+}
+
+.color-options {
+    ul {
+        $colors: (#27ae60, #2980b9, #c0392b, #2c3e50, #8e44ad);
+        @for $i from 1 through length($colors) {
+            li:nth-child(#{$i}) {
+                background-color: nth($colors, $i);
+            }
+        }
+    }
+}

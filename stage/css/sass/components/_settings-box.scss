@@ -1,0 +1,50 @@
+.settings-box{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: aliceblue;
+    z-index: 1000;
+    padding: 20px;
+    transition: 0.4s;
+    .option-title{
+        font-weight: bold;
+        color: #666;
+        margin: 10px 0 15px;
+    }
+    .toggle-settings{
+        position: absolute;
+        left: -55px;
+        top: 100px;
+        background-color: aliceblue;
+        padding: 10px 15px;
+        font-size: 22px;
+        border-radius: 10px 0 0 10px;
+        cursor: pointer;
+    }
+    &.hide-settings{
+        right: -250px;
+    }
+    .color-otpions{
+        ul{
+            $colors: #27ae60, #2980b9, #c0392b, #2c3e50, #8e44ad;
+            @for $i from 1 through list.length($colors) {
+                li:nth-child(#{$i}){
+                    background-color: list.nth($colors, $i);
+                }
+            }
+            li {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                opacity: .7;
+                cursor: pointer;
+                display: inline-block;
+                &.active{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
