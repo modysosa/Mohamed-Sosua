@@ -1,28 +1,39 @@
-@use "sass:map";
+// @use "sass:map";
 
 $themes: (
     green-theme: (bo2loz: #27ae60),
     blue-theme: (bo2loz: #2980b9),
     red-theme: (bo2loz: #c0392b),
     night-theme: (bo2loz: #2c3e50),
-    purple-theme: (bo2loz: #8e44ad)
+    purple-theme: (bo2loz: #8e44ad),
+    orange-theem: (bo2loz: #d35400)
 );
 
 @each $theme, $map in $themes {
     .#{$theme} {
+        $colorZ : map-get($map, bo2loz);
         .page .page-head .page-title {
-            color: map.get($map, bo2loz);
+            color: $colorZ;
+        }
+        .header .toggle-sidebar:hover {
+            color: $colorZ;
+        }
+        .sidebar .links-area>li>a:hover{
+            color: $colorZ;
+        }
+        .header .usermenu-container .dropdown-menu .user-info h3{
+            color: $colorZ;
         }
     }
 }
 
-.color-options {
-    ul {
-        $colors: (#27ae60, #2980b9, #c0392b, #2c3e50, #8e44ad);
-        @for $i from 1 through length($colors) {
-            li:nth-child(#{$i}) {
-                background-color: nth($colors, $i);
-            }
-        }
-    }
-}
+// .color-options {
+//     ul {
+//         $colors: (#27ae60, #2980b9, #c0392b, #2c3e50, #8e44ad,#d35400);
+//         @for $i from 1 through length($colors) {
+//             li:nth-child(#{$i}) {
+//                 background-color: nth($colors, $i);
+//             }
+//         }
+//     }
+// }

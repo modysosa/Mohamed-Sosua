@@ -3,6 +3,21 @@
 }
 body {
     font-family: "Open Sans", sans-serif;
+    &.Bokor {
+        font-family: "Bokor", system-ui;
+    }
+    &.Pacifico {
+        font-family: "Pacifico", cursive;
+    }
+    &.Dancing {
+        font-family: "Dancing Script", cursive;
+    }
+    &.Roboto {
+        font-family: "Roboto", sans-serif;
+    }
+    &.Open {
+        font-family: "Open Sans", sans-serif;
+    }
 }
 .page{
     min-height: 100vh;
@@ -22,7 +37,7 @@ body {
         padding: 20px;
         .page-title{
             font-weight: bold;
-            color: #2c3e50;
+            color: #2980b9;
         }
         .page-description {
 

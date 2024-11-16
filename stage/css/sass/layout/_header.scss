@@ -11,6 +11,9 @@
     }
     .toggle-sidebar {
         cursor: pointer;
+        &:hover{
+            color: #2980b9;
+        }
     }
     .notification-container{
         display: inline-block;
@@ -133,6 +136,7 @@
             .user-info{
                 h3{
                     font-weight: bold;
+                    color: #2980b9;
                 }
                 p{
 

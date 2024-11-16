@@ -49,7 +49,15 @@ $(function(){
     .removeClass(themesClasses.join(" "))
     .addClass($(this).data("theme"));
   });
-
+  //Switch Fonts
+  var fontClases = [];
+  $(".font-options select option").each(function(){
+    fontClases.push($(this).val());
+  });
+  $(".font-options select").on("change", function(){
+    console.log($(this).find("option:selected").val())
+    $("body").removeClass(fontClases.join(" ")).addClass($(this).find("option:selected").val());
+  });
 
 });
 /* Get the element you want displayed in fullscreen */ 
