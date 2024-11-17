@@ -70,7 +70,7 @@ $(function(){
       var region = encodeURIComponent(data.region);
       var country = encodeURIComponent(data.country);
       var KEY = '387e4170b07906a6eea25f6cbf94c084'; // Use your own API key
-      var URL = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + ',' + region + ',' + country + '&appid=' + KEY;
+      var URL = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + ',' + region + ',' + country + '&appid=' + KEY;
 
       $.getJSON(URL, function(data) {
           var type = data.weather[0].main;  //array 0 index
