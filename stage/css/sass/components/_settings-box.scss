@@ -23,6 +23,9 @@
         font-size: 22px;
         border-radius: 10px 0 0 10px;
         cursor: pointer;
+        &:hover{
+            color: #2980b9;
+        }
     }
     &.hide-settings{
         right: -250px;

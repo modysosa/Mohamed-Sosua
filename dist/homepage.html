@@ -113,7 +113,21 @@
           <div class="content"> 
             <div class="page-head">
               <h1 class="page-title">Homepage</h1>
-              <p class="page-description lead">This is Description of Homepage</p>
+              <p class="page-description lead">This is Description of Homepage
+                <div class="container">
+                  <div id="app-display">
+                    <h4>Local Weather</h4>
+                    <div id="location">The Temperature In <span id="city">Loading...</span>, <span id="state"></span></div>
+                    <div id="weather">
+                      <div class="row"><span id="wIcon"></span></div>
+                      <div class="row">It's <span id="temp"> </span></div>
+                      <div class="row">
+                        <button class="btn btn-primary" id="btnToggle">Convert C/F Temp</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </p>
             </div>
           </div>
         </div>

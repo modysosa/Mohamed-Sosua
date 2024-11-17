@@ -24,6 +24,18 @@ $themes: (
         .header .usermenu-container .dropdown-menu .user-info h3{
             color: $colorZ;
         }
+        .settings-box .toggle-settings i:hover{
+            color: $colorZ;
+        }
+        .settings-box .toggle-settings .fa-spin{
+            color: $colorZ;
+        }
+        .header .header-icon:hover{
+            color: $colorZ;
+        }
+        .header .usermenu-container .username .user:hover:hover{
+            color: $colorZ;
+        }
     }
 }
 
