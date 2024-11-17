@@ -88,7 +88,7 @@ $(function(){
           $('#city').text(city);
           $('#state').text(region);
           $('#temp').text(tempC); // Show Celsius by default
-          var weatherIcon = 'http://openweathermap.org/img/w/' + icon + '.png';
+          var weatherIcon = 'https://openweathermap.org/img/w/' + icon + '.png';
           $('#wIcon').html('<img src="' + weatherIcon + '">');
 
           // Toggle to switch between C and F temperature
