@@ -1,39 +1,39 @@
-// const wrapper = document.querySelector('.wrapper');
-// const loginLink = document.querySelector('.login-link');
-// const  registerLink= document.querySelector('.register-link');
-// const  btnpopup= document.querySelector('.btnLogin-popup');
-// const  iconClose= document.querySelector('.icon-close');
+const wrapper = document.querySelector('.wrapper');
+const loginLink = document.querySelector('.login-link');
+const  registerLink= document.querySelector('.register-link');
+const  btnpopup= document.querySelector('.btnLogin-popup');
+const  iconClose= document.querySelector('.icon-close');
 
-// registerLink.addEventListener('click', ()=>{
-//     wrapper.classList.add('active')
-// });
-// loginLink.addEventListener('click', ()=>{
-//     wrapper.classList.remove('active')
-// });
-// btnpopup.addEventListener('click', ()=>{
-//     wrapper.classList.add('active-popup')
-// });
-// iconClose.addEventListener('click', ()=>{
-//     wrapper.classList.remove('active-popup')
-// });
-
-$(document).ready(function() {
-    $('.register-link').click(function() {
-        $('.wrapper').addClass('active');
-    });
-
-    $('.login-link').click(function() {
-        $('.wrapper').removeClass('active');
-    });
-
-    $('.btnLogin-popup').click(function() {
-        $('.wrapper').addClass('active-popup');
-    });
-
-    $('.icon-close').click(function() {
-        $('.wrapper').removeClass('active-popup');
-    });
+registerLink.addEventListener('click', ()=>{
+    wrapper.classList.add('active')
 });
+loginLink.addEventListener('click', ()=>{
+    wrapper.classList.remove('active')
+});
+btnpopup.addEventListener('click', ()=>{
+    wrapper.classList.add('active-popup')
+});
+iconClose.addEventListener('click', ()=>{
+    wrapper.classList.remove('active-popup')
+});
+
+// $(document).ready(function() {
+//     $('.register-link').click(function() {
+//         $('.wrapper').addClass('active');
+//     });
+
+//     $('.login-link').click(function() {
+//         $('.wrapper').removeClass('active');
+//     });
+
+//     $('.btnLogin-popup').click(function() {
+//         $('.wrapper').addClass('active-popup');
+//     });
+
+//     $('.icon-close').click(function() {
+//         $('.wrapper').removeClass('active-popup');
+//     });
+// });
 
 
 // document.addEventListener('DOMContentLoaded', function() {
