@@ -1,68 +1,70 @@
-$(function(){
+$(function() {
   "use strict";
   
+  // Sidebar toggle
   $(".toggle-sidebar").on("click", function() {
       $('.content-area, .sidebar').toggleClass("no-sidebar");
   });
 
-  // Toggle Submenu
+  // Toggle submenu
   $(".toggle-submenu").on("click", function(){
       $(this).find(".fa-angle-right").toggleClass("down");
       $(this).next(".child-links").slideToggle();
   });
 
-  // Drop down menu
+  // Dropdown menu for notifications
   $('#notifications').on('click', function() {
       let expanded = $(this).attr('aria-expanded') === 'true';
       $(this).attr('aria-expanded', !expanded);
       $(this).next('.dropdown-menu').toggleClass('show');
   });
 
+  // Dropdown menu for user menu
   $('#usermenu').on('click', function() {
       let expanded = $(this).attr('aria-expanded') === 'true';
       $(this).attr('aria-expanded', !expanded);
       $(this).next('.dropdown-menu').toggleClass('show');
   });
 
-  // Open / close fullscreen
-  $(".toggle-fullscreen").on("click", function(){
+  // Fullscreen toggle
+  $(".toggle-fullscreen").on("click", function() {
     $(this).toggleClass("full-screen");
-    if($(this).hasClass("full-screen")){ // page now is full screen
+    if($(this).hasClass("full-screen")) { 
         openFullscreen();
-    } else {  // page is not full screen
+    } else {  
         closeFullscreen();
     }
   });
 
-  // Toggle Settings
-  $(".toggle-settings").on("click", function(){
-    $(this).find("i").toggleClass("fa-spin")
-    $(this).parent().toggleClass("hide-settings")
+  // Toggle settings
+  $(".toggle-settings").on("click", function() {
+    $(this).find("i").toggleClass("fa-spin");
+    $(this).parent().toggleClass("hide-settings");
   });
 
-  // Switch Colors
+  // Switch colors
   var themesClasses = [];
-  $(".color-otpions li").each(function(){
+  $(".color-options li").each(function() {
     themesClasses.push($(this).data("theme"));
   });
   
-  $(".color-otpions li").on("click", function(){
+  $(".color-options li").on("click", function() {
     $(this).addClass("active").siblings().removeClass("active");
     $("body").removeClass(themesClasses.join(" ")).addClass($(this).data("theme"));
   });
 
-  // Switch Fonts
-  var fontClases = [];
-  $(".font-options select option").each(function(){
-    fontClases.push($(this).val());
+  // Switch fonts
+  var fontClasses = [];
+  $(".font-options select option").each(function() {
+    fontClasses.push($(this).val());
   });
   
-  $(".font-options select").on("change", function(){
+  $(".font-options select").on("change", function() {
     console.log($(this).find("option:selected").val());
-    $("body").removeClass(fontClases.join(" ")).addClass($(this).find("option:selected").val());
+    $("body").removeClass(fontClasses.join(" ")).addClass($(this).find("option:selected").val());
   });
 
-  // Weather Functionality
+  // Weather functionality
   var Ip = 'https://ipinfo.io/json';
 
   $.getJSON(Ip, function(data) {

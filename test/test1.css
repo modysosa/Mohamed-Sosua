@@ -1,0 +1,12 @@
+.form{
+    width: 300px;
+    background:#EEE;
+    border: 1px solid #CCC;
+    padding: 10px;
+    position: relative;
+}
+
+.sp{
+    color: #F00;
+    display: none;
+}
