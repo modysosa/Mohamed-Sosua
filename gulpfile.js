@@ -15,7 +15,8 @@ const sass = gulpSass(dartSass);
 gulp.task('connect', function() {
     connect.server({
         root: './dist/',
-        livereload: true
+        livereload: true,
+        index: 'homepage.html'
     });
 });
 

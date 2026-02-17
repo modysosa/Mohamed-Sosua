@@ -107,6 +107,47 @@ $(function() {
       });
   });
 
+  function loadGoldPrice() {
+    var GOLD_API_URL = 'https://api.gold-api.com/price/XAU';
+    $('#gold-price').text('Loading...');
+    $('#gold-updated').text('');
+
+    $.getJSON(GOLD_API_URL)
+      .done(function(data) {
+        if (data && typeof data.price === 'number') {
+          $('#gold-price').text(data.price.toFixed(2) + ' USD');
+        } else {
+          $('#gold-price').text('Unknown price');
+        }
+
+        if (data && data.updatedAtReadable) {
+          $('#gold-updated').text('Updated: ' + data.updatedAtReadable);
+        } else if (data && data.updatedAt) {
+          $('#gold-updated').text('Updated at: ' + data.updatedAt);
+        }
+
+        var details = $('#gold-details');
+        if (details.length && data && typeof data === 'object') {
+          details.empty();
+          Object.keys(data).forEach(function(key) {
+            var value = data[key];
+            if (value === null || typeof value === 'object') {
+              return;
+            }
+            var li = $('<li></li>');
+            li.append($('<strong></strong>').text(key + ': '));
+            li.append(document.createTextNode(value));
+            details.append(li);
+          });
+        }
+      })
+      .fail(function() {
+        $('#gold-price').text('Failed to load gold price');
+      });
+  }
+
+  loadGoldPrice();
+
 });
 
 /* Get the element you want displayed in fullscreen */
